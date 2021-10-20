@@ -1,0 +1,39 @@
+.heart {
+    width: 200px;
+    height: 200px;
+    top: 30%;
+    left: 50%;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: heart 1.5s infinite;
+}
+
+@keyframes heart {
+    50% {
+        transform: translate(-70%, -70%)scale(8, 8);
+    }
+    100% {
+        transform: translate(-50%, -50%)scale(1, 1);
+    }
+}
+
+.heart div {
+    background: rgb(245, 6, 6);
+    width: 74px;
+    height: 128px;
+    top: 40%;
+    display: block;
+    position: absolute;
+    border-radius: 60%;
+}
+
+.left {
+    left: 45px;
+    transform: rotate(330deg);
+}
+
+.right {
+    right: 44px;
+    transform: rotate(30deg);
+}
